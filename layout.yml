@@ -12,3 +12,36 @@ relic_image:
   y: 230
   width: 500
   height: 680
+
+person_name:
+  align: center
+  font: goudy-old-style 36
+  color: white
+  x: 200
+  y: 650
+  width: 410
+  valign: middle
+  height: 80
+
+person_image:
+  x: 165
+  y: 142
+  width: 500
+  height: 500
+
+person_passion1:
+  # extends: person_passion
+  x: 150
+  y: 790
+
+person_fear1:
+  # extends: person_passion
+  x: 445
+  y: 790
+
+person_score:
+  x: 620
+  y: 110
+  align: center
+  font: goudy-old-style 46
+  width: 50
