@@ -1,26 +1,32 @@
 require 'squib'
 
 #relics
-Squib::Deck.new(cards: 5, layout: 'layout.yml', width: 825, height: 1125) do
+Squib::Deck.new(cards: 15, layout: 'relic-layout.yml', width: 825, height: 1125) do
 	data = csv file: 'relics.csv'
 
   png file: data['Border'].map {|a| "art/cult_following_relics_#{a}.png" }
-  png file: data['Image'].map {|a| "art/#{a}.png" }, layout: 'relic_image'
-  text str: data['Title'], layout: 'relic_title'
+  png file: data['Image'].map {|a| "art/#{a}.png" }, layout: 'image'
+  text str: data['Title'], layout: 'title'
   save prefix: 'relic', format: :png
-  save_sheet  prefix: 'group_relic_', columns: 4, rows: 2
+	save_sheet  prefix: 'group_relic_', columns: 4, rows: 2
 end
 
 #people
-Squib::Deck.new(cards: 10, layout: 'layout.yml', width: 825, height: 1125) do
+Squib::Deck.new(cards: 28, layout: 'people-layout.yml', width: 825, height: 1125) do
 	data = csv file: 'people.csv'
 
   png file: 'art/people_back.png'
-  png file: data['Image'].map {|a| "art/#{a}.png" }, layout: 'person_image'
-  png file: data['Passion1'].map {|a| "art/icon_#{a}.png" }, layout: 'person_passion1'
-  png file: data['Fear1'].map {|a| "art/icon_#{a}.png" }, layout: 'person_fear1'
-  text str: data['Score'], layout: 'person_score'
-  text str: data['Name'], layout: 'person_name'
+  png file: data['Image'].map {|a| "art/#{a}.png" }, layout: 'image'
+  png file: data['Passion1'].map {|a| "art/icon_#{a}.png" }, layout: 'passion1'
+  png file: data['Passion2'].map {|a| "art/icon_#{a}.png" }, layout: 'passion2'
+  png file: data['Passion3'].map {|a| "art/icon_#{a}.png" }, layout: 'passion3'
+  png file: data['Passion4'].map {|a| "art/icon_#{a}.png" }, layout: 'passion4'
+  png file: data['Fear1'].map {|a| "art/icon_#{a}.png" }, layout: 'fear1'
+  png file: data['Fear2'].map {|a| "art/icon_#{a}.png" }, layout: 'fear2'
+  png file: data['Fear3'].map {|a| "art/icon_#{a}.png" }, layout: 'fear3'
+  png file: data['Fear4'].map {|a| "art/icon_#{a}.png" }, layout: 'fear4'
+  text str: data['Score'], layout: 'score'
+  text str: data['Name'], layout: 'name'
   save prefix: 'person', format: :png
   save_sheet  prefix: 'group_people_', columns: 4, rows: 2
 end

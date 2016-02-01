@@ -1,0 +1,14 @@
+title:
+  align: center
+  font: goudy-old-style 36
+  x: 200
+  y: 800
+  width: 410
+  valign: middle
+  height: 150
+
+image:
+  x: 160
+  y: 230
+  width: 500
+  height: 680

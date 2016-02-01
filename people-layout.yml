@@ -1,0 +1,54 @@
+name:
+  align: center
+  font: goudy-old-style 28
+  color: white
+  x: 200
+  y: 650
+  width: 410
+  valign: middle
+  height: 80
+
+image:
+  x: 165
+  y: 142
+  width: 500
+  height: 500
+
+passion1:
+  x: 150
+  y: 790
+
+passion2:
+  x: 275
+  y: 790
+
+passion3:
+  x: 150
+  y: 920
+
+passion4:
+  x: 275
+  y: 920
+
+fear1:
+  x: 440
+  y: 790
+
+fear2:
+  x: 560
+  y: 790
+
+fear3:
+  x: 440
+  y: 920
+
+fear4:
+  x: 560
+  y: 920
+
+score:
+  x: 620
+  y: 110
+  align: center
+  font: goudy-old-style 46
+  width: 50
