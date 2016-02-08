@@ -1,0 +1,30 @@
+name:
+  font: goudy-old-style 42
+  y: 840
+  width: 510
+  height: 150
+  valign: middle
+
+name_rite:
+  extends: name
+  x: 210
+  align: right
+
+name_focus:
+  extends: name
+  x: 100
+  align: left
+
+image:
+  x: 110
+  y: 110
+  width: 605
+  height: 905
+
+icon1:
+  x: 145
+  y: 120
+
+icon2:
+  x: 145
+  y: 245
