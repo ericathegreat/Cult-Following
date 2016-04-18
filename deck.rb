@@ -12,9 +12,9 @@ Squib::Deck.new(cards: 15, layout: 'relic-layout.yml', width: 825, height: 1125)
 end
 
 #focuses
-Squib::Deck.new(cards: 20, layout: 'rite-layout.yml', width: 825, height: 1125) do
+Squib::Deck.new(cards: 30, layout: 'rite-layout.yml', width: 825, height: 1125) do
 	data = csv file: 'focus.csv'
-
+  background color: 'white'
 	border_filename = data['Colour2'].map do |a| 
   	a == 'none' ? 'art/cult_following_ends_one_icon.png' : 'art/cult_following_ends_two_icons.png'
   end
@@ -28,9 +28,9 @@ Squib::Deck.new(cards: 20, layout: 'rite-layout.yml', width: 825, height: 1125) 
 end
 
 #rites
-Squib::Deck.new(cards: 20, layout: 'rite-layout.yml', width: 825, height: 1125) do
+Squib::Deck.new(cards: 30, layout: 'rite-layout.yml', width: 825, height: 1125) do
 	data = csv file: 'rite.csv'
-
+  background color: 'white'
 	border_filename = data['Colour2'].map do |a| 
   	a == 'none' ? 'art/cult_following_starts_one_icon.png' : 'art/cult_following_starts_two_icons.png'
   end
@@ -46,7 +46,7 @@ end
 #people
 Squib::Deck.new(cards: 29, layout: 'people-layout.yml', width: 825, height: 1125) do
 	data = csv file: 'people.csv'
-
+  background color: 'white'
   png file: 'art/people_back.png'
   png file: data['Image'].map {|a| "art/#{a}.png" }, layout: 'image'
   png file: data['Passion1'].map {|a| "art/icon_#{a}.png" }, layout: 'passion1'
