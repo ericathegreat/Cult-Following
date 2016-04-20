@@ -1,0 +1,21 @@
+title:
+  align: center
+  font: goudy-old-style 42
+  x: 650
+  y: 160
+  width: 800
+  valign: middle
+  align: center
+  height: 150
+  angle: 1.5708
+
+requirement:
+  align: center
+  font: goudy-old-style 36
+  x: 450
+  y: 160
+  width: 800
+  valign: middle
+  align: center
+  height: 300
+  angle: 1.5708
