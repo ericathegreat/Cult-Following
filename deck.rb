@@ -7,7 +7,7 @@ Squib::Deck.new(cards: 15, layout: 'relic-layout.yml', width: 825, height: 1125)
   png file: data['Border'].map {|a| "art/cult_following_relics_#{a}.png" }
   png file: data['Image'].map {|a| "art/#{a}.png" }, layout: 'image'
   text str: data['Title'], layout: 'title'
-  save prefix: 'relic', format: :png
+  # save prefix: 'relic', format: :png
 	save_sheet  prefix: 'group_relic_', columns: 4, rows: 2
 end
 
@@ -23,7 +23,7 @@ Squib::Deck.new(cards: 30, layout: 'rite-layout.yml', width: 825, height: 1125) 
   text str: data['Name'], layout: 'name_focus'
   png file: data['Colour1'].map {|a| "art/icon_#{a}.png" }, layout: 'icon1'
   png file: data['Colour2'].map {|a| "art/icon_#{a}.png" }, layout: 'icon2'
-  save prefix: 'focus', format: :png
+  # save prefix: 'focus', format: :png
 	save_sheet  prefix: 'group_focus_', columns: 4, rows: 2
 end
 
@@ -39,7 +39,7 @@ Squib::Deck.new(cards: 30, layout: 'rite-layout.yml', width: 825, height: 1125) 
   text str: data['Name'], layout: 'name_rite'
   png file: data['Colour1'].map {|a| "art/icon_#{a}.png" }, layout: 'icon1'
   png file: data['Colour2'].map {|a| "art/icon_#{a}.png" }, layout: 'icon2'
-  save prefix: 'rite', format: :png
+  # save prefix: 'rite', format: :png
 	save_sheet  prefix: 'group_rite_', columns: 4, rows: 2
 end
 
@@ -59,8 +59,19 @@ Squib::Deck.new(cards: 29, layout: 'people-layout.yml', width: 825, height: 1125
   png file: data['Fear4'].map {|a| "art/icon_#{a}.png" }, layout: 'fear4'
   text str: data['Score'], layout: 'score'
   text str: data['Name'], layout: 'name'
-  save prefix: 'person', format: :png
+  # save prefix: 'person', format: :png
   save_sheet  prefix: 'group_people_', columns: 4, rows: 2
+end
+
+#philosophies
+Squib::Deck.new(cards: 16, layout: 'philosophy-layout.yml', width: 825, height: 1125) do
+  data = csv file: 'philosophy.csv'
+
+  background color: 'white'
+  text str: data['Title'], layout: 'title'
+  text str: data['Requirement'], layout: 'requirement'
+  text str: data['Score'], layout: 'score'
+  save_sheet  prefix: 'group_philosophy_', columns: 4, rows: 2
 end
 
 #backs

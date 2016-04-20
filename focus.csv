@@ -1,31 +1,21 @@
-Name,Image,Colour1,Colour2
-Unlabeled Potion,focus-potion,arcane,none
-Unlabeled Potion,focus-potion,arcane,none
-Unlabeled Potion,focus-potion,arcane,none
-Stardust,focus-stardust,celestial,none
-Stardust,focus-stardust,celestial,none
-Stardust,focus-stardust,celestial,none
-An Unpaired Sock,focus-unpaired-sock,mundane,none
-An Unpaired Sock,focus-unpaired-sock,mundane,none
-An Unpaired Sock,focus-unpaired-sock,mundane,none
-Dwarf Rabbits,focus-dwarf-rabbits,nature,none
-Dwarf Rabbits,focus-dwarf-rabbits,nature,none
-Dwarf Rabbits,focus-dwarf-rabbits,nature,none
-Spare Change,art-not-found,wealth,none
-Spare Change,art-not-found,wealth,none
-Spare Change,art-not-found,wealth,none
-Burnt Corpses,art-not-found,arcane,arcane
-The Full Moon,focus-moon,celestial,celestial
-The Chores,art-not-found,mundane,mundane
-The Balding Bear,art-not-found,nature,nature
-The Bling,focus-bling,wealth,wealth
-Oblivion,focus-oblivion,arcane,celestial
-Three Empty Flasks,art-not-found,arcane,mundane
-Dubious Mushrooms,focus-dubious-mushroom,arcane,nature
-Haunted Vaults,art-not-found,arcane,wealth
-A Weathervane,focus-weather-vane,celestial,mundane
-Creatures with Fangs,art-not-found,celestial,nature
-The Private Satelite,art-not-found,celestial,wealth
-A Pigeon,focus-pigeon,mundane,nature
-The Hedge Fund,focus-hedge-fund,mundane,wealth
-The Coal Seam,art-not-found,nature,wealth
+Qty,Name,Image,Colour1,Colour2
+3,Unlabeled Potion,focus-potion,arcane,none
+3,Stardust,focus-stardust,celestial,none
+3,An Unpaired Sock,focus-unpaired-sock,mundane,none
+3,Dwarf Rabbits,focus-dwarf-rabbits,nature,none
+3,Spare Change,art-not-found,wealth,none
+1,Burnt Corpses,art-not-found,arcane,arcane
+1,The Full Moon,focus-moon,celestial,celestial
+1,The Chores,art-not-found,mundane,mundane
+1,The Balding Bear,art-not-found,nature,nature
+1,The Bling,focus-bling,wealth,wealth
+1,Oblivion,focus-oblivion,arcane,celestial
+1,Three Empty Flasks,art-not-found,arcane,mundane
+1,Dubious Mushrooms,focus-dubious-mushroom,arcane,nature
+1,Haunted Vaults,art-not-found,arcane,wealth
+1,A Weathervane,focus-weather-vane,celestial,mundane
+1,Creatures with Fangs,art-not-found,celestial,nature
+1,The Private Satelite,art-not-found,celestial,wealth
+1,A Pigeon,focus-pigeon,mundane,nature
+1,The Hedge Fund,focus-hedge-fund,mundane,wealth
+1,The Coal Seam,art-not-found,nature,wealth
