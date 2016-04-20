@@ -1,3 +1,4 @@
+title,score,requirement
 SYCOPHANT,1,Gain at least one follower with 5 points of influence
 FEARMONGER,1,Gain at least 3 followers who have a common fear
 FOR SCIENCE!,2,Gain at least 3 followers without using any Arcane Principles
@@ -11,6 +12,6 @@ FREE RANGE,2,Gain at least 3 followers who have a passion for Nature Principles
 THE SIMPLE LIFE,2,Gain at least 3 followers who have a passion for Mundane Principles
 ALL THE WAY TO THE BANK,2,Gain at least 3 followers who have a passion for Wealth Principles
 RELIQUARY,2,Has played at least 3 Relics
-DIVERSITY,2,Have a ritual that contains at lest 4 different Principles
+DIVERSITY,2,Have a ritual that contains at least 4 different Principles
 PEOPLE PERSON,3,Have at least 5 people in your cult following
 COPYCAT,3,Have at least 1 ritual that exactly matches a previously played ritual.
