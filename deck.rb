@@ -60,7 +60,8 @@ Squib::Deck.new(cards: 29, layout: 'people-layout.yml', width: 825, height: 1125
   text str: data['Score'], layout: 'score'
   text str: data['Name'], layout: 'name'
   # save prefix: 'person', format: :png
-  save_sheet  prefix: 'group_people_', columns: 4, rows: 2
+  save_sheet  prefix: 'group_followers_', columns: 4, rows: 2
+  save_pdf file: 'followers.pdf'
 end
 
 #philosophies
