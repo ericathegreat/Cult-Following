@@ -9,6 +9,7 @@ Squib::Deck.new(cards: 15, layout: 'relic-layout.yml', width: 825, height: 1125)
   text str: data['Title'], layout: 'title'
   # save prefix: 'relic', format: :png
 	save_sheet  prefix: 'group_relic_', columns: 4, rows: 2
+  save_pdf file: 'relics.pdf', width: cm(29.7), height: cm(21), margin: cm(0.5), gap: 29
 end
 
 #focuses
@@ -25,6 +26,8 @@ Squib::Deck.new(cards: 30, layout: 'rite-layout.yml', width: 825, height: 1125) 
   png file: data['Colour2'].map {|a| "art/icon_#{a}.png" }, layout: 'icon2'
   # save prefix: 'focus', format: :png
 	save_sheet  prefix: 'group_focus_', columns: 4, rows: 2
+  save_pdf file: 'focuses.pdf', width: cm(29.7), height: cm(21), margin: cm(0.5), gap: 29
+ 
 end
 
 #rites
@@ -41,6 +44,7 @@ Squib::Deck.new(cards: 30, layout: 'rite-layout.yml', width: 825, height: 1125) 
   png file: data['Colour2'].map {|a| "art/icon_#{a}.png" }, layout: 'icon2'
   # save prefix: 'rite', format: :png
 	save_sheet  prefix: 'group_rite_', columns: 4, rows: 2
+  save_pdf file: 'rites.pdf', width: cm(29.7), height: cm(21), margin: cm(0.5), gap: 29
 end
 
 #people
@@ -61,7 +65,7 @@ Squib::Deck.new(cards: 29, layout: 'people-layout.yml', width: 825, height: 1125
   text str: data['Name'], layout: 'name'
   # save prefix: 'person', format: :png
   save_sheet  prefix: 'group_followers_', columns: 4, rows: 2
-  save_pdf file: 'followers.pdf'
+  save_pdf file: 'followers.pdf', width: cm(29.7), height: cm(21), margin: cm(0.5), gap: 29
 end
 
 #philosophies
@@ -73,6 +77,7 @@ Squib::Deck.new(cards: 16, layout: 'philosophy-layout.yml', width: 825, height: 
   text str: data['Requirement'], layout: 'requirement'
   text str: data['Score'], layout: 'score'
   save_sheet  prefix: 'group_philosophy_', columns: 4, rows: 2
+  save_pdf file: 'philosophies.pdf', width: cm(29.7), height: cm(21), margin: cm(0.5), gap: 29
 end
 
 #backs
@@ -80,16 +85,19 @@ Squib::Deck.new(cards: 8, layout: 'card-back.yml', width: 825, height: 1125) do
   png file: 'art/cult_following_backs.png'
   png file: 'art/cardback-follower.png', layout: 'image'
   save_sheet  prefix: 'back_follower', columns: 4, rows: 2
+  save_pdf file: 'followers_back.pdf', width: cm(29.7), height: cm(21), margin: cm(0.5), gap: 29
 end
 
 Squib::Deck.new(cards: 8, layout: 'card-back.yml', width: 825, height: 1125) do
   png file: 'art/cult_following_backs.png'
   png file: 'art/cardback-ritual.png', layout: 'image'
   save_sheet  prefix: 'back_ritual', columns: 4, rows: 2
+  save_pdf file: 'ritual_back.pdf', width: cm(29.7), height: cm(21), margin: cm(0.5), gap: 29
 end
 
 Squib::Deck.new(cards: 8, layout: 'card-back.yml', width: 825, height: 1125) do
   png file: 'art/cult_following_backs.png'
   png file: 'art/cardback-philosophy.png', layout: 'image'
   save_sheet  prefix: 'back_philosophy', columns: 4, rows: 2
+  save_pdf file: 'philosophy_back.pdf', width: cm(29.7), height: cm(21), margin: cm(0.5), gap: 29
 end
